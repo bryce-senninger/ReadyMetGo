@@ -28,7 +28,7 @@ This will create the table, now we will need to insert some dummy data to demons
 
 This will require our model structure, and insert all the dummy data located in our data/setprofiles.js into our readymetgo database. Next we are ready to restart the server by once again running:
 
--node server.js
+- node server.js
 
 The website will now be deployed at http://localhost:8080
 
