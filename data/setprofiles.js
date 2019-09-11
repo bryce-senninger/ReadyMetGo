@@ -10,7 +10,7 @@ let profilesArray = [
     mediumPair: "Developer",
     bio:
       "Seeking web developer, specifically someone with full stack experience, to design a site to host a photo album to document me and my nephew's exotic travels.",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -23,7 +23,7 @@ let profilesArray = [
     medium: "Musician",
     mediumPair: "Developer",
     bio: "Looking for someone to build a website for my free-folk band.",
-    link: "https://www.linkedin.com/in/bryce-senninger-7774a6184/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -36,7 +36,7 @@ let profilesArray = [
     medium: "Visual Artist",
     mediumPair: "Developer",
     bio: "I love weddings. Would love to attend more of them.",
-    link: "https://www.linkedin.com/in/julioguzman1/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -49,7 +49,7 @@ let profilesArray = [
     medium: "Visual Artist",
     mediumPair: "Developer",
     bio: "I somehow ended up king. What a waste.",
-    link: "https://www.linkedin.com"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -62,7 +62,7 @@ let profilesArray = [
     medium: "Musician",
     mediumPair: "Developer",
     bio: "What's another husband?",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -76,7 +76,7 @@ let profilesArray = [
     mediumPair: "Developer",
     bio:
       "Looking for a developer to help me build a site to showcase my visual art. Jon Snow offered to do it, but he knows nothing. Also willing to collaborate and provide art if you'd like to incorporate some of my visual art and graphic design into any unrelated project.",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -89,7 +89,7 @@ let profilesArray = [
     medium: "Photographer",
     mediumPair: "Developer",
     bio: "That brother of mine...",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -102,7 +102,7 @@ let profilesArray = [
     medium: "Photographer",
     mediumPair: "Developer",
     bio: "Never a Jonas sister",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -115,7 +115,7 @@ let profilesArray = [
     medium: "Piña Colada Enthusiast",
     mediumPair: "Developer",
     bio: "Needles aren't for sewing",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -128,7 +128,7 @@ let profilesArray = [
     medium: "Piña Colada Enthusiast",
     mediumPair: "Developer",
     bio: "Those ladies though",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -141,7 +141,7 @@ let profilesArray = [
     medium: "Piña Colada Enthusiast",
     mediumPair: "Developer",
     bio: "I'm a good person",
-    link: "https://www.linkedin.com/in/cateashley/"
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -152,7 +152,8 @@ let profilesArray = [
     city: "Baltimore",
     email: "omar_coming@gmail.com",
     medium: "Full Stack Dev",
-    mediumPair: "Full Stack Dev"
+    mediumPair: "Full Stack Dev",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -163,7 +164,8 @@ let profilesArray = [
     city: "Baltimore",
     email: "copguy@gmail.com",
     medium: "Piña Colada Enthusiast",
-    mediumPair: "Full Stack Dev"
+    mediumPair: "Full Stack Dev",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -173,7 +175,8 @@ let profilesArray = [
     city: "Baltimore",
     email: "dissapointed@gmail.com",
     medium: "Visual Artist",
-    mediumPair: "Full Stack Dev"
+    mediumPair: "Full Stack Dev",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -184,7 +187,8 @@ let profilesArray = [
     city: "Baltimore",
     email: "commish@gmail.com",
     medium: "Developer",
-    mediumPair: "Full Stack Dev"
+    mediumPair: "Full Stack Dev",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -195,7 +199,8 @@ let profilesArray = [
     city: "Baltimore",
     email: "king@gmail.com",
     medium: "Developer",
-    mediumPair: "Developer"
+    mediumPair: "Developer",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -206,7 +211,8 @@ let profilesArray = [
     city: "New York",
     email: "get_out@gmail.com",
     medium: "Visual Artist",
-    mediumPair: "Developer"
+    mediumPair: "Developer",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -217,7 +223,8 @@ let profilesArray = [
     city: "New York",
     email: "whats_the_deal@gmail.com",
     medium: "Musician",
-    mediumPair: "Musician"
+    mediumPair: "Musician",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -228,7 +235,8 @@ let profilesArray = [
     city: "New York",
     email: "giddy_up@gmail.com",
     medium: "Musician",
-    mediumPair: "Musician"
+    mediumPair: "Musician",
+    link: "https://github.com/bryce-senninger"
   },
 
   {
@@ -267,7 +275,8 @@ let profilesArray = [
     city: "Albuquerque",
     email: "science@gmail.com",
     medium: "Photographer",
-    mediumPair: "Photographer"
+    mediumPair: "Photographer",
+    link: "https://github.com/bryce-senninger"
   }
 ];
 

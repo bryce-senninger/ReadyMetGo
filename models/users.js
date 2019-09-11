@@ -46,7 +46,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     bio: {
       type: DataTypes.STRING(500),
-      allowNull: false,
+      allowNull: true,
       validate: {
         notEmpty: true
       }

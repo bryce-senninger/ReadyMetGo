@@ -22,7 +22,7 @@ Then, you are ready to insert the table. This will be done automatically with al
 
 - node server.js
 
-This will create the table, now we will need to insert some dummy data to demonstrat functionality. Control+C to end the server listen, then run:
+This will create the table, now we will need to insert some dummy data to demonstrate functionality. Control+C to end the server listen, then run:
 
 - node config/userData.js
 
