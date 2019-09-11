@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Indie+Flower|Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <title>ReadyMetGo</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="jumbotron jumbotron1 metGoResult">
+        <h1 class="display-4">Met.</h1>
+        <div id="headText">
+          <p>
+            Based on your skills and search preferences, here are some people we
+            think you should link up with.
+          </p>
+        </div>
+        <hr />
+        <div class="tableWrap">
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Skill</th>
+                <th scope="col">Location</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="dynamicUsers"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        let search = window.location.search;
+        search = search.replace("?", "");
+        search = search.split("=");
+        search = search[1].replace("%20", " ");
+        search = search.replace("%20", " ");
+        if (search == "Pi%C3%B1a Colada Enthusiast") {
+          search = "Piña Colada Enthusiast";
+        }
+        console.log(search);
+        $.ajax({
+          url: "/api/setprofiles",
+          method: "GET"
+        })
+          .then(function(response) {
+            let results = response;
+            console.log(search);
+            for (i = 0; i < results.length; i++) {
+              if (results[i].medium == search) {
+                innerHTML = '<tr><th scope="row"><img class="profileImg" src="';
+                innerHTML += results[i].photo;
+                innerHTML +=
+                  '" title="Profile Pic" alt="Profile Pic"/></th><td class="align-middle">';
+                innerHTML += results[i].name;
+                innerHTML += '</td><td class="align-middle">';
+                innerHTML += results[i].medium;
+                innerHTML += '</td><td class="align-middle">';
+                innerHTML += results[i].city;
+                innerHTML +=
+                  '</td><td class="align-middle"><button id="' +
+                  results[i].id +
+                  '"class="btn btn-primary submit" type="submit">Meet</button></td></tr>';
+                console.log(results[i]);
+                $("#dynamicUsers").append(innerHTML);
+              }
+            }
+          })
+          .then(function() {
+            $(".submit").on("click", function(event) {
+              event.preventDefault();
+              window.location.href = "/results?profile_id=" + this.id;
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
