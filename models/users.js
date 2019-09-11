@@ -8,20 +8,11 @@ module.exports = function(sequelize, DataTypes) {
         notEmpty: true
       }
     },
-    // age: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   validate: {
-    //     isNumeric: true,
-    //     notEmpty: true
-    //   }
-    // },
     photo: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         notEmpty: true
-        // isUrl: true
       }
     },
     city: {
@@ -55,7 +46,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     bio: {
       type: DataTypes.STRING(500),
-      // allowNull: true,
+      allowNull: false,
       validate: {
         notEmpty: true
       }

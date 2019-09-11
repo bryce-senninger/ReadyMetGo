@@ -11,14 +11,6 @@ module.exports = function(app) {
     });
   });
 
-  //app.post("/api/setprofiles.js", function(req, res) {
-  //  //userProfile will give you 4 attributes in newProfile on ready.html page
-  //  //4 values we decided to get from user
-  //  let userProfile = req.body;
-  //  console.log("from apiRoute.js : " + userProfile);
-  //  res.json("test");
-  //});
-
   // Add new match
   app.post("/api/setprofiles", function(req, res) {
     console.log(req.body);
@@ -29,20 +21,5 @@ module.exports = function(app) {
         res.send(data);
       });
     });
-
-    // db.Users.findAll({
-    //   where: { medium }
-    // }).then(function(matches) {
-    //   if (matches.length === 0) {
-    //     return res.status(404).send("No match found");
-    //   }
-
-    //   res.json({
-    //     status: "OK",
-    //     name: matches[0].name
-    //   });
-    // });
-
-    // Send response
   });
 };
