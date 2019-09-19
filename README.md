@@ -54,15 +54,15 @@ The data directory gives us some code to populate the database with, so we can t
 
 The models directory contains our object relational mapping, in this case done using Sequelize. It uses our connection established in the config directory to connect to our database and gives us some structural definitions for our users entries.
 
-## Public Directory
+### Public Directory
 
 This directory contains the base HTML, CSS, necessary images, and the front-facing javascript (such as user click events listeners) necessary to interact with the API.
 
-## Routes Directory
+### Routes Directory
 
 The routes directory contains code defining our get and put routes to the API, as well as html routes to display our base HTML structures contained in the public directory.
 
-## Server File
+### Server File
 
 The server file residing outside all other directories contains the information required to initialize our server, as well as lets our app know to use our defined API and HTML routes.
 
@@ -71,13 +71,13 @@ The server file residing outside all other directories contains the information 
 This project uses:
 * CSS
 * Javascript
-* jQuery
+    * jQuery
 * MySQL
 * Node.js
-* npm dependencies
-    * express
-    * mysql
-    * sequelize
+    * npm dependencies
+        * express
+        * mysql
+        * sequelize
 
 ## Links
 
